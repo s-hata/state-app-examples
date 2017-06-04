@@ -1,0 +1,16 @@
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="side" opened="true">Drawer content</md-sidenav>
+  <div class="my-content">
+    <md-toolbar color="primary">
+      <a class="app-icon-button" (click)="sidenav.toggle()">
+        <i class="material-icons app-toolbar-menu">menu</i>
+      </a>
+
+      Angular Material2 Example App
+
+      <span class="app-toolbar-filler"></span>
+      <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
+    </md-toolbar>
+    <router-outlet></router-outlet>
+	</div>
+</md-sidenav-container>
